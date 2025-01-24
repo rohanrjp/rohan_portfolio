@@ -101,3 +101,9 @@ body {
 .section-title{
   @apply text-4xl font-bold  gap-x-3 
 }
+
+.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet{
+    @apply bg-primary
+  }

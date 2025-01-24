@@ -57,7 +57,8 @@ module.exports = {
   		},
 
 		backgroundImage:{
-			dots:'url'
+			dots:'url',
+			contact:'url(/work_img.png)'
 		}
   	}
   },

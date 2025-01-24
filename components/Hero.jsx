@@ -2,11 +2,7 @@
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import Link from "next/link";
-import {
-  RiTodoFill,
-  RiArrowDownSLine,
-  RiBriefcase2Fill,
-} from "react-icons/ri";
+import { RiTodoFill, RiArrowDownSLine, RiBriefcase2Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import MyImg from "./MyImg";
 import Badge from "./Badge";
@@ -15,7 +11,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 sm:mt-0">
+    <section className="py-0 sm:py-12 xl:py-24 h-[84vh] xl:pt-28 -mb-40 sm:-mb-0">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
@@ -62,7 +58,7 @@ const Hero = () => {
           </div>
           <div className="hidden xl:flex relative mr-20">
             <Badge
-              containerStyles="absolute top-[-4vh] -left-[40rem] bg-white dark:bg-secondary"
+              containerStyles="absolute top-[-4vh] -left-[40rem] bg-white "
               icon={<RiBriefcase2Fill />}
               endcountNum={2}
               badgetext="Years of experience"
@@ -102,20 +98,12 @@ const Hero = () => {
               badgetext="Projects"
               endText="+"
             />
-            <motion.div
-              className="absolute w-[350px] h-[500px] rounded-full overflow-hidden -top-1 -right-0"
-              animate={{ scale: [1, 1.05, 1] }} // Scale up and down
-              transition={{
-                duration: 2, // Duration of one full cycle
-                ease: "easeInOut",
-                repeat: Infinity, // Repeat indefinitely
-              }}
-            >
+            <div className="absolute w-[500px] h-[500px] rounded-full overflow-hidden -top-1 -right-12">
               <MyImg
                 containerStyles="w-full h-full object-cover"
-                imgSrc="/Rohan.png"
+                imgSrc="/portrait_rohan.png"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
         <div className="hidden md:flex absolute xl:bottom-10 left-1/2  animate-bounce  ">
