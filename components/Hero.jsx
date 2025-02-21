@@ -37,7 +37,7 @@ const Hero = () => {
             <p className="subtitle">
               I specialize in Python backend development with Flask and FastAPI,
               leveraging my fast learning ability to focus on data science,
-              analysis, and visualization as well. Learning Go as well.
+              analysis, and visualization as well.
             </p>
             <div className="pt-6 flex flex-col mx-auto gap-y-3 md:flex-row gap-x-3 xl:mx-0 mb-12">
               <Link href="/contact">
