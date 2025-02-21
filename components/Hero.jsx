@@ -30,7 +30,7 @@ const Hero = () => {
                   }}
                   style={{ backgroundSize: "200% 200%" }}
                 >
-                  Rohan Jose Paul
+                  Rohan Paul
                 </motion.span>
               </span>
             </h1>{" "}
