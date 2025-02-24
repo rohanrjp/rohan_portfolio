@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
           <div className="flex">
             <Link
               href={project.github}
-              target="_blank" // Opens the link in a new tab
+              target="_blank" 
               rel="noopener noreferrer" // Adds security to prevent the new page from having control over your page
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
             >
