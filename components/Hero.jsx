@@ -30,14 +30,14 @@ const Hero = () => {
                   }}
                   style={{ backgroundSize: "200% 200%" }}
                 >
-                  Rohan Paul
+                  Rohan Jose Paul
                 </motion.span>
               </span>
             </h1>{" "}
             <p className="subtitle">
               I specialize in Python backend development with Flask and FastAPI,
               leveraging my fast learning ability to focus on data science,
-              analysis, and visualization as well. Learning Go for
+              analysis, and visualization as well. Learning Go
             </p>
             <div className="pt-6 flex flex-col mx-auto gap-y-3 md:flex-row gap-x-3 xl:mx-0 mb-12">
               <Link href="/contact">
