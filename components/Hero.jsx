@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-3">
               Hey, My name is{" "}
-              <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent dark:from-blue-400 dark:via-green-500 dark:to-cyan-500">
+              <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent dark:from-blue-400 dark:via-green-500 dark:to-cyan-500">
                 <motion.span
                   animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }}
                   transition={{
@@ -37,7 +37,7 @@ const Hero = () => {
             <p className="subtitle">
               I specialize in Python backend development with Flask and FastAPI,
               leveraging my fast learning ability to focus on data science,
-              analysis, and visualization as well.
+              analysis, and visualization as well.Learning Go as well.
             </p>
             <div className="pt-6 flex flex-col mx-auto gap-y-3 md:flex-row gap-x-3 xl:mx-0 mb-12">
               <Link href="/contact">
