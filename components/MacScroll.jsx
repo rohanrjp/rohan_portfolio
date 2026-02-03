@@ -109,16 +109,17 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
   return (
     <div
       ref={ref}
-      className="min-h-[180vh] sm:min-h-[200vh] flex flex-col items-center 
-      py-12 sm:py-20 lg:py-32 justify-start flex-shrink-0 
-      [perspective:800px] transform px-4"
+      className="min-h-[200vh] flex flex-col items-center 
+      py-0 md:py-40 justify-start flex-shrink-0 
+      [perspective:800px] transform md:scale-100 
+      scale-[0.5] sm:scale-75 "
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="dark:text-white text-neutral-800 text-3xl sm:text-4xl lg:text-5xl font-bold mb-10 sm:mb-16 text-center"
+        className="dark:text-white text-neutral-800 text-5xl font-bold mb-20 text-center"
       >
         {title || (
           <span>
@@ -135,10 +136,7 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
         translate={translate}
       />
       {/* Base area */}
-      <div
-        className="w-full max-w-[32rem] bg-[#272729] rounded-2xl overflow-hidden relative -z-10"
-        style={{ height: "min(22rem, 60vw)" }}
-      >
+      <div className="h-[22rem] w-[32rem] bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
         {/* above keyboard bar */}
         <div className="h-10 w-full relative">
           <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
@@ -167,19 +165,14 @@ export const MacbookScroll = ({ src, showGradient, title, badge }) => {
 
 export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
   return (
-    <div
-      className="relative [perspective:800px] mx-auto"
-      style={{ width: "min(32rem, 90vw)", height: "min(24rem, 70vw)" }}
-    >
+    <div className="relative [perspective:800px]">
       <div
         style={{
           transform: "perspective(800px) rotateX(-25deg) translateZ(0px)",
           transformOrigin: "bottom",
           transformStyle: "preserve-3d",
-          width: "100%",
-          height: "min(12rem, 36vw)",
         }}
-        className="bg-[#010101] rounded-2xl p-2 relative"
+        className="h-[12rem] w-[32rem] bg-[#010101] rounded-2xl p-2 relative"
       >
         <div
           style={{
@@ -202,7 +195,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
           transformStyle: "preserve-3d",
           transformOrigin: "top",
         }}
-        className="absolute inset-0 bg-[#010101] rounded-2xl p-2"
+        className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
         <div className="absolute inset-0 bg-[#272729] rounded-lg" />
         <Image
@@ -219,7 +212,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
 export const Trackpad = () => {
   return (
     <div
-      className="w-[45%] mx-auto h-24 sm:h-28 rounded-xl my-1"
+      className="w-[40%] mx-auto h-32  rounded-xl my-1"
       style={{
         boxShadow: "0px 0px 1px 1px #00000020 inset",
       }}
