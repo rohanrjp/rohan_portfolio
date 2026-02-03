@@ -50,7 +50,7 @@ const expData = [
 const About = () => {
   
   return (
-    <section className="xl:h-[660px] pb-0 sm:pb-12 -mb-80 sm:-mb-0 xl:py-24 flex-col justify-center items-center mx-auto ">
+    <section className="py-12 sm:py-16 xl:py-24 flex-col justify-center items-center mx-auto">
       <div className="container mx-auto">
         <h2 className="section-title text-center  mb-8 xl:mb-16 mx-auto">
           About Me
