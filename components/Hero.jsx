@@ -11,9 +11,9 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="pt-20 sm:pt-24 xl:pt-28 pb-12 sm:pb-16">
+    <section className="py-0 sm:py-12 xl:py-24 h-[84vh] xl:pt-28 -mb-40 sm:-mb-0">
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row justify-between gap-12 xl:gap-x-8">
+        <div className="flex justify-between gap-x-8">
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Software Developer
@@ -106,7 +106,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex absolute xl:bottom-10 left-1/2 animate-bounce">
+        <div className="hidden md:flex absolute xl:bottom-10 left-1/2  animate-bounce  ">
           <RiArrowDownSLine className="text-4xl text-primary mx-auto pr-3 " />
         </div>
       </div>
